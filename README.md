@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution here](https://github.com/nehanalinik/3-column-preview-card-component-main)
-- Live Site URL: [Live Site here](https://your-live-site-url.com)
+- Live Site URL: [Live Site here](https://nehanalinik.github.io/3-column-preview-card-component-main/)
 
 ## My process
 
