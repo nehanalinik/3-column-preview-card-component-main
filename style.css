@@ -139,7 +139,7 @@ body {
 /* Below 280px */
 @media screen and (max-width: 280px) {
   body {
-    max-height: 180vh;
+    height: 180vh;
   }
   p {
     line-height: 0.95rem;
@@ -164,7 +164,7 @@ body {
 
 @media screen and (min-width: 281px) and (max-width: 375px) {
   body {
-    max-height: 160vh;
+    height: 160vh;
   }
   .main__container {
     width: 250px;
@@ -186,7 +186,7 @@ body {
 
 @media screen and (min-width: 376px) and (max-width: 480px) {
   body {
-    max-height: 160vh;
+    height: 160vh;
   }
   .main__container {
     width: 350px;
@@ -198,13 +198,13 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   body {
-    max-height: 200vh;
+    height: 200vh;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   body {
-    max-height: 100vh;
+    height: 100vh;
   }
   p {
     line-height: 1.25rem;
@@ -251,7 +251,7 @@ body {
 
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
   body {
-    max-height: 100vh;
+    height: 100vh;
   }
   p {
     line-height: 1.65rem;
@@ -302,7 +302,7 @@ body {
 /* after 1440px */
 @media screen and (min-width: 1440px) {
   body {
-    max-height: 100vh;
+    height: 100vh;
   }
   p {
     line-height: 1.5rem;
