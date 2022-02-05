@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* ### Primary */
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+  --transparentWhite: hsla(0, 0%, 100%, 0.75); /* (paragraphs)*/
+  --veryLightGray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  padding: 0.75rem 1.45rem;
+  border: none;
+  border-radius: 1.75rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+  background-color: var(--veryLightGray);
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+  cursor: pointer;
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--veryLightGray);
+  font-size: 1.85rem;
+  font-weight: 700;
+  padding: 1rem 1rem;
+}
+p {
+  color: var(--transparentWhite);
+  font-size: 0.85rem;
+  line-height: 1.85rem;
+  font-weight: 400;
+  width: 90%;
+  padding: 0 1rem;
+}
+img {
+  width: 55px;
+  margin: 0 1rem;
+}
+
+body {
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--veryLightGray);
+  margin: 0;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main__container {
+  width: 400px;
+  max-width: 400px;
+  border-radius: 0.5rem;
+}
+
+.sedans {
+  background-color: var(--brightOrange);
+  padding: 1.85rem;
+  border-radius: 0.5rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: grid;
+  grid-template-rows: 15px 25px 150px 50px;
+  row-gap: 2rem;
+}
+
+.sedan__button {
+  color: var(--brightOrange);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  width: 40%;
+}
+.sedan__button:hover {
+  background-color: var(--brightOrange);
+  border: 1px solid var(--veryLightGray);
+  color: var(--veryLightGray);
+}
+.suvs {
+  background-color: var(--darkCyan);
+  padding: 1.85rem;
+  display: grid;
+  grid-template-rows: 15px 25px 150px 50px;
+  row-gap: 2rem;
+}
+.suv__button {
+  color: var(--darkCyan);
+  transition: 0.3s ease-in-out;
+  width: 40%;
+}
+.suv__button:hover {
+  background-color: var(--darkCyan);
+  border: 1px solid var(--veryLightGray);
+  color: var(--veryLightGray);
+}
+
+.luxury {
+  background-color: var(--veryDarkCyan);
+  padding: 1.85rem;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: grid;
+  grid-template-rows: 15px 25px 150px 50px;
+  row-gap: 2rem;
+}
+
+.luxury__button {
+  color: var(--darkCyan);
+  transition: 0.3s ease-in-out;
+  width: 40%;
+}
+.luxury__button:hover {
+  background-color: var(--veryDarkCyan);
+  border: 1px solid var(--veryLightGray);
+  color: var(--veryLightGray);
+}
+
+/* !==============BREAKING POINTS============ */
+/* Below 280px */
+@media screen and (max-width: 280px) {
+  body {
+    height: 120vh;
+  }
+  p {
+    line-height: 0.95rem;
+  }
+  .main__container {
+    width: 200px;
+    max-width: 200px;
+  }
+  .sedan__button {
+    font-size: 0.75rem;
+    width: 75%;
+  }
+  .suv__button {
+    font-size: 0.75rem;
+    width: 75%;
+  }
+  .luxury__button {
+    font-size: 0.75rem;
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 281px) and (max-width: 375px) {
+  body {
+    height: 120vh;
+  }
+  .main__container {
+    width: 250px;
+    max-width: 250px;
+  }
+  p {
+    line-height: 1.25rem;
+  }
+  .sedan__button {
+    width: 60%;
+  }
+  .suv__button {
+    width: 60%;
+  }
+  .luxury__button {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 480px) {
+  body {
+    height: 120vh;
+  }
+  .main__container {
+    width: 350px;
+    max-width: 350px;
+  }
+  p {
+    line-height: 1.75rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    height: 120vh;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+  p {
+    line-height: 1.25rem;
+  }
+  .main__container {
+    width: 720px;
+    max-width: 720px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sedans {
+    border-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .sedans .description {
+    padding-bottom: 0.3rem;
+  }
+  .sedan__button {
+    font-size: 0.85rem;
+    width: 65%;
+  }
+
+  .suvs .description {
+    padding-bottom: 2rem;
+  }
+  .suv__button {
+    width: 64%;
+  }
+  .luxury {
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .luxury .description {
+    padding-bottom: 2rem;
+  }
+  .luxury__button {
+    width: 64%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  body {
+    height: 100vh;
+  }
+  p {
+    line-height: 1.65rem;
+  }
+  .main__container {
+    width: 900px;
+    max-width: 900px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sedans {
+    border-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    row-gap: 2.5rem;
+  }
+  .sedans .description {
+    padding-bottom: 3.8rem;
+  }
+  .sedan__button {
+    width: 50%;
+  }
+  .suvs {
+    row-gap: 2.5rem;
+  }
+
+  .suvs .description {
+    padding-bottom: 3.75rem;
+  }
+  .suv__button {
+    width: 50%;
+  }
+  .luxury {
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    row-gap: 2.5rem;
+  }
+  .luxury .description {
+    padding-bottom: 3.75rem;
+  }
+  .luxury__button {
+    width: 50%;
+  }
+}
+/* after 1440px */
+@media screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+  }
+  p {
+    line-height: 1.5rem;
+  }
+  .main__container {
+    width: 900px;
+    max-width: 900px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sedans {
+    border-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    row-gap: 2.5rem;
+  }
+  .sedans .description {
+    padding-bottom: 3.8rem;
+  }
+  .sedan__button {
+    width: 50%;
+  }
+
+  .suvs {
+    row-gap: 2.5rem;
+  }
+
+  .suvs .description {
+    padding-bottom: 3.75rem;
+  }
+  .suv__button {
+    width: 50%;
+  }
+  .luxury {
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    row-gap: 2.5rem;
+  }
+  .luxury .description {
+    padding-bottom: 3.75rem;
+  }
+  .luxury__button {
+    width: 50%;
+  }
+}
